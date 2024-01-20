@@ -5799,6 +5799,7 @@ pub struct ExtendedValue {
      */
     #[serde(
         default,
+        skip_serializing,
         deserialize_with = "crate::utils::deserialize_null_boolean::deserialize",
         rename = "boolValue"
     )]
